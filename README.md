@@ -1,2 +1,2 @@
-# ASM_AirBNB_Midterm_Final_Draft
-Regression analysis of factors affecting AirBNB listing prices; final draft of project
+# What Influences Listing Prices in Albany? An Airbnb Analysis (ASM, Spring 2026)
+This is an R regression analysis of factors affecting Airbnb listing prices in Albany. Data was sourced from Inside Airbnb, provided in class for the purposes of the project. This is the project's final draft. The collaborator's name was removed for privacy reasons. The `midterm-final-draft-LePartner.qmd` file will assemble the Airbnb dataset and run the analyses. The R code in the file was my contribution, while the writeup in the `.pdf` statistical report was my partner's contribution,
