@@ -1,0 +1,479 @@
+price,number_of_reviews,instant_bookable,calculated_host_listings_count,property_type,room_type,accommodates,bathrooms,bedrooms,beds,minimum_nights,maximum_nights,host_acceptance_rate,review_scores_rating,host_is_superhost
+70,9,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,2,28,1125,50,3.56,FALSE
+86,314,FALSE,5,Entire rental unit,Entire home/apt,3,1,1,1,2,1125,99,4.75,TRUE
+64,377,FALSE,2,Entire rental unit,Entire home/apt,2,1,0,2,2,45,99,4.52,TRUE
+85,332,FALSE,5,Entire rental unit,Entire home/apt,2,1,0,1,2,1125,99,4.73,TRUE
+85,623,FALSE,1,Entire rental unit,Entire home/apt,4,1,1,2,1,1125,100,4.79,FALSE
+56,437,FALSE,2,Private room in rental unit,Private room,2,1,1,2,1,60,99,4.57,TRUE
+47,853,FALSE,2,Private room in guest suite,Private room,1,1,1,1,1,1125,94,4.83,TRUE
+191,210,FALSE,8,Entire place,Entire home/apt,10,2,3,4,1,1124,89,4.96,TRUE
+55,231,FALSE,2,Private room in home,Private room,1,1.5,0,1,15,112,NA,4.81,FALSE
+59,29,FALSE,2,Private room in rental unit,Private room,1,1,1,2,5,1125,73,4.83,FALSE
+219,195,FALSE,1,Entire home,Entire home/apt,8,2,4,4,2,1125,100,4.67,FALSE
+45,54,TRUE,2,Private room in home,Private room,1,1,1,1,18,1125,97,4.69,FALSE
+185,123,FALSE,8,Entire home,Entire home/apt,7,2,2,2,1,730,89,4.96,TRUE
+59,54,TRUE,2,Private room in home,Private room,2,1,1,1,2,29,97,4.69,FALSE
+60,537,FALSE,2,Private room in guest suite,Private room,2,1,1,1,1,1125,94,4.77,TRUE
+NA,132,FALSE,2,Private room in home,Private room,1,NA,NA,NA,15,112,NA,4.92,FALSE
+41,56,TRUE,2,Private room in home,Private room,1,1,1,1,18,1125,97,4.75,FALSE
+555,58,FALSE,8,Entire home,Entire home/apt,6,1,2,3,1,1125,89,4.97,TRUE
+70,89,FALSE,3,Private room in home,Private room,2,1,1,1,1,1125,92,4.97,TRUE
+148,1,FALSE,1,Entire home,Entire home/apt,5,1.5,3,3,2,29,83,2,FALSE
+290,125,FALSE,1,Entire home,Entire home/apt,9,2,5,6,4,730,97,4.94,TRUE
+156,92,FALSE,8,Entire home,Entire home/apt,6,1,2,3,1,1125,89,4.95,TRUE
+112,132,FALSE,2,Entire rental unit,Entire home/apt,4,1,1,2,2,1125,100,4.91,TRUE
+92,48,FALSE,8,Entire home,Entire home/apt,2,1,1,1,2,365,100,4.92,TRUE
+36,47,TRUE,3,Private room in home,Private room,2,1,1,1,18,1125,90,4.79,NA
+89,137,FALSE,8,Entire rental unit,Entire home/apt,2,1,1,1,2,730,100,4.85,TRUE
+766,9,FALSE,8,Entire home,Entire home/apt,10,1,4,5,4,1125,89,5,TRUE
+68,184,FALSE,9,Entire rental unit,Entire home/apt,4,1,1,2,3,730,100,4.74,TRUE
+27,34,TRUE,3,Private room in home,Private room,2,1,1,1,18,1125,90,4.76,NA
+35,27,TRUE,3,Private room in home,Private room,1,1,1,1,20,730,90,4.78,NA
+59,130,FALSE,8,Private room in home,Private room,2,1,1,1,2,1125,100,4.92,TRUE
+59,55,FALSE,8,Private room in guest suite,Private room,2,1,1,1,2,730,100,4.93,TRUE
+104,964,FALSE,1,Entire guest suite,Entire home/apt,2,1,1,3,1,1125,75,4.9,TRUE
+81,156,FALSE,1,Entire rental unit,Entire home/apt,4,1,1,1,2,1125,NA,4.85,FALSE
+59,32,FALSE,8,Private room in rental unit,Private room,2,1,1,1,2,1125,100,5,TRUE
+250,16,FALSE,1,Entire home,Entire home/apt,4,1.5,2,5,3,30,67,4.94,FALSE
+115,104,FALSE,1,Private room in rental unit,Private room,1,1,1,1,1,1125,76,4.94,TRUE
+51,272,FALSE,3,Private room in rental unit,Private room,2,1,1,1,1,730,92,4.96,TRUE
+79,727,FALSE,11,Entire loft,Entire home/apt,5,1,1,2,1,28,99,4.8,FALSE
+63,661,FALSE,11,Entire rental unit,Entire home/apt,3,1,1,2,1,28,99,4.72,FALSE
+71,8,FALSE,1,Private room in home,Private room,2,1,1,1,1,1125,86,5,FALSE
+86,120,FALSE,5,Entire rental unit,Entire home/apt,2,1,1,1,2,1125,99,4.68,TRUE
+54,73,FALSE,8,Private room in home,Private room,1,1,1,1,2,1125,100,4.95,TRUE
+57,219,TRUE,2,Private room in home,Private room,1,1.5,1,1,1,1125,100,4.96,TRUE
+104,1,FALSE,1,Private room in home,Private room,4,1,2,2,3,26,100,5,FALSE
+102,461,FALSE,11,Entire rental unit,Entire home/apt,6,1,2,3,1,28,99,4.68,FALSE
+102,488,FALSE,11,Entire rental unit,Entire home/apt,6,1,2,2,1,28,99,4.75,FALSE
+125,327,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,3,1,1125,96,4.75,TRUE
+54,214,FALSE,3,Private room in home,Private room,2,1,1,1,1,1125,92,4.99,TRUE
+90,322,FALSE,21,Entire rental unit,Entire home/apt,2,1,1,1,2,722,96,4.8,TRUE
+NA,54,FALSE,10,Entire rental unit,Entire home/apt,4,NA,2,NA,2,1125,11,4.8,FALSE
+58,462,FALSE,2,Private room in home,Private room,1,1.5,1,1,1,1125,100,4.98,TRUE
+183,52,FALSE,4,Entire rental unit,Entire home/apt,4,1,2,2,2,365,99,4.77,TRUE
+79,24,FALSE,10,Entire rental unit,Entire home/apt,4,1,1,1,5,1125,11,4.46,FALSE
+93,138,TRUE,9,Entire rental unit,Entire home/apt,5,1,2,3,3,700,100,4.87,TRUE
+124,173,FALSE,1,Entire home,Entire home/apt,4,1,1,3,1,800,96,4.99,TRUE
+97,4,FALSE,1,Entire home,Entire home/apt,4,1.5,2,2,30,1125,100,5,FALSE
+89,25,FALSE,10,Entire rental unit,Entire home/apt,4,1,2,2,7,1125,11,4.76,FALSE
+205,27,TRUE,6,Entire rental unit,Entire home/apt,6,1,3,3,3,1125,100,3.96,FALSE
+160,0,TRUE,1,Entire rental unit,Entire home/apt,4,1,3,3,70,1125,NA,NA,FALSE
+102,131,FALSE,1,Entire home,Entire home/apt,6,1.5,3,3,1,1125,95,4.78,TRUE
+171,126,FALSE,3,Entire rental unit,Entire home/apt,4,1,2,2,2,29,93,4.83,TRUE
+166,23,FALSE,4,Entire rental unit,Entire home/apt,3,1,1,2,2,1080,99,4.96,TRUE
+181,131,FALSE,18,Entire home,Entire home/apt,6,1,3,3,1,1125,99,4.85,TRUE
+NA,91,FALSE,21,Entire home,Entire home/apt,6,NA,3,NA,2,1125,96,4.91,TRUE
+110,385,FALSE,3,Entire rental unit,Entire home/apt,4,1,0,1,1,365,100,4.97,TRUE
+117,312,FALSE,3,Entire rental unit,Entire home/apt,4,1,1,2,1,1125,100,4.99,TRUE
+145,27,FALSE,6,Entire rental unit,Entire home/apt,4,1,2,2,13,1125,90,4.85,TRUE
+134,129,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,1,1,365,100,4.95,FALSE
+105,49,FALSE,3,Entire loft,Entire home/apt,4,1,0,3,1,29,93,4.67,TRUE
+79,166,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,2,2,365,99,4.72,FALSE
+108,100,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,94,4.61,FALSE
+108,129,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,94,4.79,FALSE
+118,150,FALSE,17,Entire rental unit,Entire home/apt,4,1,2,2,1,1125,94,4.63,FALSE
+152,268,FALSE,1,Entire home,Entire home/apt,4,1,2,2,1,100,98,4.99,TRUE
+90,109,FALSE,9,Entire rental unit,Entire home/apt,4,1,2,2,3,700,100,4.88,TRUE
+86,76,FALSE,5,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.63,TRUE
+79,75,TRUE,9,Entire rental unit,Entire home/apt,3,1,1,1,3,700,100,4.91,TRUE
+101,195,FALSE,17,Private room in home,Private room,3,1,1,1,1,32,100,4.95,TRUE
+113,26,FALSE,4,Entire rental unit,Entire home/apt,4,1,2,3,2,1125,99,4.54,TRUE
+160,11,FALSE,2,Entire rental unit,Entire home/apt,5,2,2,2,14,365,80,5,TRUE
+115,174,TRUE,2,Entire rental unit,Entire home/apt,4,1,1,2,2,1125,99,4.86,TRUE
+192,173,FALSE,18,Entire home,Entire home/apt,6,1,3,4,1,365,99,4.79,TRUE
+119,236,TRUE,2,Entire rental unit,Entire home/apt,6,1,2,3,1,730,99,4.89,TRUE
+45,86,FALSE,8,Private room in home,Private room,1,1,1,1,2,180,100,4.93,TRUE
+310,49,FALSE,8,Entire home,Entire home/apt,13,5.5,6,7,1,1125,89,4.94,TRUE
+117,106,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,180,97,4.68,FALSE
+97,4,FALSE,3,Entire condo,Entire home/apt,4,1,2,3,30,365,86,5,TRUE
+84,205,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,2,365,64,4.99,FALSE
+104,97,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,94,4.7,FALSE
+104,194,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,2,2,1125,95,4.97,TRUE
+99,20,FALSE,10,Entire rental unit,Entire home/apt,4,1,2,2,3,365,11,4.45,FALSE
+136,46,FALSE,17,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,94,4.63,FALSE
+74,276,FALSE,1,Room in aparthotel,Entire home/apt,2,1,1,1,1,1125,99,4.73,FALSE
+132,30,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,7,1125,73,4.93,TRUE
+100,10,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,4,365,97,3.8,FALSE
+100,85,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,94,4.74,FALSE
+90,96,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,100,4.77,TRUE
+97,82,FALSE,9,Entire townhouse,Entire home/apt,5,1,2,2,3,365,100,4.89,TRUE
+80,359,FALSE,1,Entire guest suite,Entire home/apt,2,1,0,1,1,27,84,4.91,TRUE
+94,78,TRUE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,97,4.63,FALSE
+186,147,FALSE,21,Entire home,Entire home/apt,6,1,3,3,2,1125,96,4.93,TRUE
+107,105,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,1125,96,4.84,TRUE
+564,101,FALSE,21,Entire home,Entire home/apt,12,2.5,5,7,2,365,96,4.94,TRUE
+124,88,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,365,96,4.85,TRUE
+104,88,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,94,4.67,FALSE
+119,242,FALSE,3,Entire rental unit,Entire home/apt,4,1,1,2,1,1125,100,4.98,TRUE
+94,70,FALSE,21,Entire rental unit,Entire home/apt,2,1,1,2,2,730,96,4.77,TRUE
+262,172,FALSE,3,Entire vacation home,Entire home/apt,9,1.5,5,5,1,28,94,4.92,TRUE
+99,292,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,1,28,94,4.88,TRUE
+136,134,FALSE,17,Entire rental unit,Entire home/apt,5,2,2,2,1,1125,94,4.6,FALSE
+176,51,FALSE,8,Entire cottage,Entire home/apt,9,2,4,6,1,1125,89,4.98,TRUE
+NA,3,FALSE,3,Entire rental unit,Entire home/apt,2,NA,1,NA,13,1125,100,5,TRUE
+NA,0,FALSE,1,Entire place,Entire home/apt,4,NA,NA,NA,1,1,NA,NA,FALSE
+101,118,FALSE,15,Entire home,Entire home/apt,2,1,1,2,1,1125,99,4.76,TRUE
+117,80,FALSE,15,Entire rental unit,Entire home/apt,4,1.5,1,2,1,1125,99,4.9,TRUE
+107,164,FALSE,15,Entire townhouse,Entire home/apt,2,1,1,1,1,1125,99,4.88,TRUE
+137,264,FALSE,2,Entire townhouse,Entire home/apt,7,2,2,5,1,730,98,4.98,TRUE
+184,250,FALSE,1,Entire townhouse,Entire home/apt,8,2,3,4,1,1125,99,4.98,TRUE
+98,73,FALSE,9,Entire townhouse,Entire home/apt,6,1.5,2,2,3,365,100,4.89,TRUE
+100,63,TRUE,9,Entire rental unit,Entire home/apt,3,1,1,1,3,365,100,4.71,TRUE
+68,2,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,2,6,1125,NA,3,FALSE
+118,15,FALSE,6,Entire rental unit,Entire home/apt,2,1,1,1,13,365,90,5,TRUE
+114,141,FALSE,17,Private room in home,Private room,2,1,1,2,1,60,100,4.97,TRUE
+99,215,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,1,28,94,4.89,TRUE
+174,10,FALSE,6,Entire rental unit,Entire home/apt,2,1,1,1,13,365,90,5,TRUE
+NA,18,FALSE,17,Entire home,Entire home/apt,12,3.5,4,4,1,32,100,4.94,TRUE
+NA,64,FALSE,17,Entire rental unit,Entire home/apt,2,NA,1,NA,1,365,94,4.75,FALSE
+62,0,FALSE,1,Private room in rental unit,Private room,1,1,2,2,3,7,0,NA,FALSE
+99,59,FALSE,17,Entire rental unit,Entire home/apt,2,1,1,1,1,365,94,4.56,FALSE
+NA,103,TRUE,2,Entire rental unit,Entire home/apt,5,NA,3,NA,30,365,100,4.97,FALSE
+NA,10,FALSE,1,Entire rental unit,Entire home/apt,4,NA,1,NA,1,365,100,3.7,FALSE
+92,8,FALSE,6,Entire rental unit,Entire home/apt,2,1,0,1,14,365,90,4.75,TRUE
+140,5,FALSE,2,Entire home,Entire home/apt,4,1,3,3,7,365,67,5,FALSE
+126,2,FALSE,2,Entire home,Entire home/apt,4,1.5,4,3,14,1125,67,5,FALSE
+111,118,FALSE,1,Entire rental unit,Entire home/apt,4,1,1,2,2,1125,100,4.92,TRUE
+61,153,FALSE,17,Private room in home,Private room,2,1.5,1,1,1,60,100,4.97,TRUE
+60,133,FALSE,17,Private room in home,Private room,2,1.5,1,1,1,60,100,4.94,TRUE
+NA,28,FALSE,1,Entire rental unit,Entire home/apt,4,NA,2,NA,2,29,NA,4.86,FALSE
+141,3,FALSE,2,Entire vacation home,Entire home/apt,5,1,2,2,1,365,NA,3.33,FALSE
+157,4,FALSE,2,Entire vacation home,Entire home/apt,3,1,3,3,1,365,NA,3.25,FALSE
+80,302,FALSE,2,Entire condo,Entire home/apt,2,1,1,1,1,21,99,4.9,TRUE
+104,104,TRUE,1,Entire rental unit,Entire home/apt,2,1,1,1,31,1125,100,4.81,FALSE
+216,9,FALSE,3,Entire rental unit,Entire home/apt,4,2,2,2,30,365,100,5,FALSE
+156,5,TRUE,1,Entire guest suite,Entire home/apt,7,1,3,5,3,365,100,4.6,FALSE
+92,5,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,2,1125,100,5,FALSE
+109,10,FALSE,6,Entire rental unit,Entire home/apt,2,1,1,1,13,365,90,4.9,TRUE
+120,70,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,365,96,4.89,TRUE
+233,267,FALSE,4,Entire home,Entire home/apt,8,2,4,4,1,30,98,4.91,TRUE
+102,78,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,2,130,90,4.97,TRUE
+68,1,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,14,365,NA,5,FALSE
+84,95,FALSE,11,Entire rental unit,Entire home/apt,4,1,1,1,1,365,99,4.67,FALSE
+250,46,FALSE,21,Entire rental unit,Entire home/apt,6,1,4,4,1,1125,96,4.61,TRUE
+45,41,FALSE,8,Private room in home,Private room,1,1,1,1,2,1125,100,4.93,TRUE
+85,21,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,1,365,98,4.67,FALSE
+78,41,TRUE,2,Entire rental unit,Entire home/apt,2,1,1,1,2,1125,100,4.95,TRUE
+102,31,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,2,2,1125,100,4.94,TRUE
+47,19,FALSE,2,Private room in rental unit,Private room,1,1,1,2,5,365,73,4.95,FALSE
+93,14,FALSE,10,Entire rental unit,Entire home/apt,2,1,1,1,7,365,11,5,FALSE
+105,59,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,365,96,4.93,TRUE
+140,46,TRUE,15,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.91,TRUE
+82,38,FALSE,2,Private room in home,Private room,1,1,1,1,1,30,91,5,TRUE
+71,70,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,1,90,97,4.9,TRUE
+47,50,FALSE,1,Private room in home,Private room,1,2,1,1,1,4,98,4.7,FALSE
+71,3,FALSE,10,Entire rental unit,Entire home/apt,2,1,1,1,30,365,11,5,FALSE
+76,4,FALSE,10,Entire rental unit,Entire home/apt,2,1,1,1,3,365,11,4.5,FALSE
+86,36,FALSE,1,Entire rental unit,Entire home/apt,4,1,1,1,2,1125,100,4.75,FALSE
+204,130,FALSE,18,Entire home,Entire home/apt,8,2,3,4,1,365,99,4.95,TRUE
+105,19,TRUE,1,Entire rental unit,Entire home/apt,6,1,3,3,3,1125,100,4.53,TRUE
+704,7,TRUE,6,Entire home,Entire home/apt,15,7,7,8,1,365,71,4.57,FALSE
+119,12,TRUE,6,Private room in bed and breakfast,Private room,2,1,1,1,1,365,71,4.58,FALSE
+NA,22,TRUE,2,Private room in home,Private room,2,NA,NA,NA,2,29,97,4.77,FALSE
+151,6,TRUE,6,Private room in bed and breakfast,Private room,2,1,1,1,1,365,71,4.33,FALSE
+140,4,FALSE,2,Entire rental unit,Entire home/apt,6,2,3,3,14,365,80,5,TRUE
+138,36,FALSE,2,Entire home,Entire home/apt,10,1,3,4,1,730,98,5,TRUE
+121,6,TRUE,6,Private room in bed and breakfast,Private room,2,1,1,2,1,365,71,4.67,FALSE
+119,10,TRUE,6,Private room in bed and breakfast,Private room,2,1,1,1,1,365,71,4.5,FALSE
+99,47,TRUE,1,Entire home,Entire home/apt,6,2,2,3,2,360,100,4.43,NA
+85,2,FALSE,3,Entire rental unit,Entire home/apt,4,1,2,2,30,365,86,4.5,TRUE
+57,20,FALSE,5,Private room in rental unit,Private room,2,1,1,1,5,365,83,4.75,TRUE
+95,50,FALSE,15,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.72,TRUE
+NA,3,FALSE,2,Private room in home,Private room,1,NA,NA,NA,180,1125,0,5,FALSE
+NA,0,FALSE,1,Entire townhouse,Entire home/apt,6,NA,3,NA,7,80,NA,NA,FALSE
+94,56,FALSE,3,Entire rental unit,Entire home/apt,5,1,2,2,1,365,98,4.5,FALSE
+276,120,FALSE,1,Entire home,Entire home/apt,9,2,5,5,2,28,97,4.95,TRUE
+120,6,FALSE,2,Entire rental unit,Entire home/apt,4,1,2,2,3,365,0,4.33,FALSE
+NA,12,FALSE,2,Entire rental unit,Entire home/apt,4,NA,2,NA,3,365,0,4.5,FALSE
+NA,2,FALSE,10,Entire rental unit,Entire home/apt,4,NA,3,NA,14,365,11,3.5,FALSE
+292,137,FALSE,1,Entire home,Entire home/apt,8,2,4,5,2,30,99,4.97,TRUE
+150,19,TRUE,1,Entire rental unit,Entire home/apt,7,2,3,3,3,1125,100,4.68,FALSE
+86,202,TRUE,1,Private room in townhouse,Private room,3,1,1,2,1,30,100,4.98,TRUE
+73,17,FALSE,13,Private room in home,Private room,1,1.5,1,1,5,75,83,5,TRUE
+86,27,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,100,4.81,TRUE
+56,4,FALSE,2,Private room in home,Private room,1,1,1,1,180,1125,0,5,FALSE
+98,24,FALSE,15,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.88,TRUE
+65,73,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,1,2,90,100,4.77,FALSE
+39,31,FALSE,2,Private room in rental unit,Private room,1,1,1,2,1,1125,40,4.68,FALSE
+49,30,FALSE,2,Private room in rental unit,Private room,2,1.5,1,1,1,720,40,4.83,FALSE
+122,16,TRUE,6,Entire rental unit,Entire home/apt,5,1,2,3,2,1125,100,4.19,FALSE
+237,62,FALSE,1,Entire home,Entire home/apt,11,2,5,6,2,90,100,4.81,FALSE
+140,56,FALSE,17,Entire rental unit,Entire home/apt,5,1,2,2,1,365,94,4.73,FALSE
+70,0,FALSE,18,Private room in home,Private room,1,1,1,1,30,365,99,NA,TRUE
+300,22,FALSE,8,Entire rental unit,Entire home/apt,5,2,2,2,1,730,89,5,TRUE
+205,91,FALSE,18,Entire home,Entire home/apt,8,1,4,4,1,365,99,4.82,TRUE
+70,6,TRUE,1,Entire rental unit,Entire home/apt,2,1,1,3,28,1125,97,5,FALSE
+81,17,FALSE,2,Private room in home,Private room,1,1,1,1,1,10,91,4.94,TRUE
+93,0,FALSE,1,Private room in rental unit,Private room,2,1,1,1,1,365,0,NA,FALSE
+72,3,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,14,365,28,4.67,FALSE
+69,85,TRUE,2,Entire rental unit,Entire home/apt,4,1,1,2,1,365,99,4.81,TRUE
+92,52,FALSE,21,Entire rental unit,Entire home/apt,2,1,1,1,1,365,96,4.79,TRUE
+107,49,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,0,2,365,96,4.59,TRUE
+119,9,TRUE,6,Private room in bed and breakfast,Private room,2,1,1,1,1,365,71,4.67,FALSE
+NA,2,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,5,FALSE
+NA,8,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,1125,98,4.88,FALSE
+NA,9,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,4.67,FALSE
+168,3,TRUE,12,Room in hotel,Private room,2,1,1,1,1,365,98,4.67,FALSE
+NA,6,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,4.33,FALSE
+NA,3,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,3.67,FALSE
+NA,1,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,5,FALSE
+NA,0,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,NA,FALSE
+NA,0,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,NA,FALSE
+NA,0,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,NA,FALSE
+NA,0,TRUE,12,Room in hotel,Private room,2,NA,1,NA,1,365,98,NA,FALSE
+333,17,TRUE,12,Entire guesthouse,Entire home/apt,6,2,3,4,1,365,98,4.88,FALSE
+NA,27,FALSE,5,Private room in home,Private room,1,NA,1,NA,5,365,83,4.85,TRUE
+43,40,FALSE,5,Private room in home,Private room,1,1,1,1,5,365,83,4.98,TRUE
+71,8,FALSE,2,Private room in home,Private room,1,1,1,1,3,365,100,5,TRUE
+70,20,FALSE,5,Private room in home,Private room,2,2,1,1,5,365,83,4.95,TRUE
+103,206,FALSE,2,Entire rental unit,Entire home/apt,4,1,2,2,1,30,99,4.93,TRUE
+198,2,FALSE,1,Entire home,Entire home/apt,8,2,3,5,1,365,100,5,FALSE
+116,20,FALSE,2,Entire home,Entire home/apt,3,1,1,2,3,365,100,4.85,TRUE
+121,114,TRUE,1,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.84,TRUE
+NA,6,TRUE,1,Entire rental unit,Entire home/apt,4,NA,2,NA,1,365,91,5,FALSE
+89,26,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,2,3,365,85,4.92,TRUE
+64,153,FALSE,17,Private room in home,Private room,2,4,1,1,1,365,100,4.86,TRUE
+92,33,FALSE,1,Entire rental unit,Entire home/apt,2,1,2,3,1,365,97,4.91,FALSE
+124,6,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,4,2,28,100,4.33,FALSE
+82,9,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,2,30,180,89,5,TRUE
+96,34,FALSE,1,Entire rental unit,Entire home/apt,1,1,1,1,1,3,100,4.82,TRUE
+97,25,TRUE,9,Entire rental unit,Entire home/apt,4,1,2,2,3,365,100,4.88,TRUE
+245,21,FALSE,3,Entire home,Entire home/apt,8,3.5,5,5,5,365,100,4.62,FALSE
+NA,12,FALSE,1,Entire rental unit,Entire home/apt,6,NA,3,NA,14,27,NA,5,FALSE
+98,45,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,1,1,120,97,4.91,TRUE
+158,72,TRUE,1,Entire home,Entire home/apt,6,2,3,3,2,21,95,4.99,TRUE
+234,85,FALSE,11,Entire rental unit,Entire home/apt,12,3,4,4,1,365,99,4.72,FALSE
+228,39,FALSE,21,Entire rental unit,Entire home/apt,6,1,4,2,1,365,96,4.77,TRUE
+50,71,FALSE,17,Private room in home,Private room,1,3,1,1,1,365,100,4.87,TRUE
+53,99,FALSE,17,Private room in home,Private room,1,3,1,1,1,365,100,4.89,TRUE
+62,12,FALSE,17,Private room in home,Private room,2,4,1,1,1,365,100,4.92,TRUE
+960,0,FALSE,17,Entire home,Entire home/apt,16,4,9,10,1,35,100,NA,TRUE
+59,50,FALSE,17,Private room in home,Private room,2,3,1,1,1,365,100,4.92,TRUE
+24,0,FALSE,1,Private room in villa,Private room,2,0.5,1,1,1,365,0,NA,FALSE
+91,52,TRUE,5,Entire rental unit,Entire home/apt,3,1,0,1,1,365,99,4.67,FALSE
+56,35,FALSE,17,Private room in home,Private room,2,3,1,1,1,365,100,4.94,TRUE
+58,104,FALSE,17,Private room in home,Private room,2,3,1,1,1,365,100,4.92,TRUE
+102,67,FALSE,15,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.73,TRUE
+66,171,FALSE,6,Entire rental unit,Entire home/apt,2,1,0,1,1,14,100,4.66,FALSE
+108,28,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,365,94,4.54,FALSE
+108,29,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,365,94,4.59,FALSE
+89,2,FALSE,1,Entire rental unit,Entire home/apt,4,2,2,2,14,365,83,4.5,FALSE
+94,24,TRUE,1,Entire rental unit,Entire home/apt,4,1,2,2,1,1125,100,4.29,FALSE
+105,9,FALSE,1,Entire home,Entire home/apt,4,1,2,2,30,365,100,4.89,TRUE
+102,1,FALSE,1,Private room in home,Private room,4,1.5,1,1,2,365,100,5,FALSE
+321,21,TRUE,11,Entire townhouse,Entire home/apt,16,4,5,5,1,365,99,4.67,FALSE
+59,14,FALSE,13,Private room in home,Private room,1,1.5,1,1,5,45,83,5,TRUE
+113,9,FALSE,2,Entire rental unit,Entire home/apt,3,1,1,2,2,365,100,5,FALSE
+NA,1,FALSE,3,Entire rental unit,Entire home/apt,4,NA,1,NA,14,365,28,5,FALSE
+116,17,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,365,96,4.59,TRUE
+89,80,FALSE,21,Entire rental unit,Entire home/apt,2,1.5,1,0,2,365,96,4.83,TRUE
+NA,56,FALSE,1,Entire home,Entire home/apt,2,NA,1,NA,1,30,100,4.82,TRUE
+93,58,FALSE,21,Entire rental unit,Entire home/apt,2,1,0,1,2,365,96,4.97,TRUE
+95,39,TRUE,9,Entire rental unit,Entire home/apt,5,1,2,2,3,365,100,4.87,TRUE
+98,57,FALSE,15,Entire home,Entire home/apt,2,1,1,0,1,1125,99,4.63,TRUE
+71,56,TRUE,17,Private room in home,Private room,2,3,1,1,1,30,100,4.96,TRUE
+140,0,FALSE,1,Entire home,Entire home/apt,4,1,2,2,7,365,0,NA,FALSE
+69,0,FALSE,1,Private room in rental unit,Private room,1,1,1,1,30,365,53,NA,FALSE
+115,23,TRUE,2,Entire rental unit,Entire home/apt,5,1,1,0,2,365,94,4.57,FALSE
+75,23,FALSE,2,Entire rental unit,Entire home/apt,2,0,1,2,1,365,89,4.91,TRUE
+115,33,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,2,1,365,89,4.88,TRUE
+113,73,FALSE,4,Entire townhouse,Entire home/apt,4,1,2,0,2,365,98,4.84,TRUE
+64,5,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,0,3,365,63,4.6,TRUE
+115,6,FALSE,2,Entire home,Entire home/apt,2,1.5,1,0,5,365,63,5,TRUE
+NA,3,TRUE,6,Entire townhouse,Entire home/apt,5,NA,2,NA,2,1125,100,4.67,FALSE
+75,2,FALSE,3,Entire rental unit,Entire home/apt,3,1,1,1,25,365,NA,4,FALSE
+153,88,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,2,1,120,84,4.98,TRUE
+70,2,FALSE,3,Entire rental unit,Entire home/apt,2,1,2,1,14,365,28,4,FALSE
+36,0,FALSE,3,Private room in rental unit,Private room,1,2,0,1,28,365,85,NA,TRUE
+56,0,FALSE,18,Private room in home,Private room,1,1,1,1,20,365,99,NA,TRUE
+NA,2,FALSE,3,Private room in guesthouse,Private room,1,NA,1,NA,28,365,85,3.5,TRUE
+NA,4,FALSE,1,Entire home,Entire home/apt,4,NA,2,NA,2,365,NA,4,FALSE
+85,9,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,2,7,730,100,5,TRUE
+79,82,FALSE,6,Entire rental unit,Entire home/apt,4,1,1,3,1,365,100,4.82,FALSE
+79,85,FALSE,6,Entire rental unit,Entire home/apt,4,1,1,3,1,365,100,4.72,FALSE
+121,16,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,1,2,90,100,4.63,FALSE
+52,2,FALSE,18,Private room in home,Private room,1,1.5,1,1,28,365,99,5,TRUE
+65,0,FALSE,3,Entire rental unit,Entire home/apt,2,1,0,0,30,365,NA,NA,FALSE
+108,15,FALSE,17,Entire rental unit,Entire home/apt,3,1,1,1,1,365,94,4.4,FALSE
+128,66,FALSE,21,Entire rental unit,Entire home/apt,4,2,2,2,2,365,96,4.91,TRUE
+213,27,FALSE,21,Entire home,Entire home/apt,6,2,4,4,2,365,96,4.96,TRUE
+117,56,TRUE,2,Entire rental unit,Entire home/apt,6,2,3,3,1,365,99,4.95,TRUE
+115,33,FALSE,5,Entire rental unit,Entire home/apt,2,1,0,1,1,365,99,4.85,FALSE
+92,36,FALSE,5,Entire rental unit,Entire home/apt,2,1,0,1,1,365,99,4.83,FALSE
+115,32,FALSE,5,Entire rental unit,Entire home/apt,2,1,0,1,1,365,99,4.81,FALSE
+90,192,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,2,1,1125,99,4.94,TRUE
+65,0,FALSE,18,Private room in home,Private room,1,1.5,1,1,28,365,99,NA,TRUE
+NA,29,FALSE,21,Entire home,Entire home/apt,6,NA,4,NA,1,365,96,4.72,TRUE
+142,35,FALSE,15,Entire home,Entire home/apt,4,1,2,0,1,1125,99,4.91,TRUE
+97,46,FALSE,15,Entire home,Entire home/apt,2,1,1,1,1,1125,99,4.87,TRUE
+38,0,FALSE,5,Private room in home,Private room,1,1,1,1,28,365,29,NA,FALSE
+242,0,TRUE,6,Entire condo,Entire home/apt,2,1,1,1,5,1125,100,NA,FALSE
+105,0,FALSE,18,Private room in home,Private room,1,1,1,1,30,365,99,NA,TRUE
+45,5,FALSE,1,Private room in home,Private room,1,3,8,1,2,100,88,5,TRUE
+56,0,FALSE,18,Private room in home,Private room,1,1.5,1,1,28,365,99,NA,TRUE
+85,4,FALSE,13,Private room in home,Private room,1,1.5,1,1,4,22,83,5,TRUE
+199,0,FALSE,1,Entire home,Entire home/apt,4,1.5,2,2,3,90,100,NA,FALSE
+108,16,FALSE,1,Entire rental unit,Entire home/apt,4,1,3,3,3,365,98,4.25,FALSE
+55,3,FALSE,3,Private room in rental unit,Private room,1,1,1,1,28,365,85,5,TRUE
+107,11,FALSE,2,Entire rental unit,Entire home/apt,5,1,3,3,3,300,89,5,NA
+117,43,TRUE,3,Entire rental unit,Entire home/apt,3,1,1,1,1,365,100,4.47,FALSE
+115,65,FALSE,1,Entire rental unit,Entire home/apt,3,1,1,2,1,28,97,4.92,TRUE
+74,81,FALSE,6,Entire rental unit,Entire home/apt,4,1,1,3,1,365,100,4.77,FALSE
+84,2,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,87,5,FALSE
+76,32,FALSE,17,Entire rental unit,Entire home/apt,2,1,1,1,1,30,100,4.94,TRUE
+58,40,FALSE,1,Private room in rental unit,Private room,1,1,1,1,1,365,90,4.8,FALSE
+50,7,FALSE,1,Private room in home,Private room,1,1,1,1,3,365,100,4,FALSE
+101,1,FALSE,18,Private room in home,Private room,1,1.5,1,1,28,365,99,5,TRUE
+108,11,FALSE,1,Private room in condo,Private room,2,1,1,1,1,365,79,4.73,FALSE
+190,0,TRUE,1,Entire home,Entire home/apt,5,2,3,2,3,1125,75,NA,FALSE
+52,1,FALSE,18,Private room in home,Private room,1,1.5,1,1,28,365,99,5,TRUE
+97,18,FALSE,15,Entire townhouse,Entire home/apt,2,1,1,1,1,1125,99,4.5,TRUE
+52,0,FALSE,18,Private room in home,Private room,1,1,1,1,30,365,99,NA,TRUE
+86,0,TRUE,3,Entire rental unit,Entire home/apt,6,1,3,4,1,365,100,NA,FALSE
+162,37,FALSE,17,Entire rental unit,Entire home/apt,5,1,2,2,1,365,94,4.7,FALSE
+68,6,FALSE,3,Entire rental unit,Entire home/apt,2,1,0,1,2,365,87,4.83,FALSE
+86,1,FALSE,1,Private room in home,Private room,2,1.5,1,1,1,365,33,4,FALSE
+82,33,TRUE,2,Entire rental unit,Entire home/apt,2,1,1,0,1,365,100,4.88,TRUE
+59,5,FALSE,17,Private room in rental unit,Private room,1,1,1,1,2,365,100,4.8,TRUE
+NA,0,FALSE,1,Entire rental unit,Entire home/apt,2,NA,NA,NA,365,365,100,NA,FALSE
+80,0,FALSE,5,Entire home,Entire home/apt,4,1,1,1,28,365,29,NA,FALSE
+42,6,FALSE,1,Private room in townhouse,Private room,1,1.5,2,1,1,365,82,4.67,FALSE
+167,36,FALSE,1,Entire home,Entire home/apt,8,1.5,4,5,2,365,98,4.69,FALSE
+92,5,FALSE,1,Entire home,Entire home/apt,4,1,2,2,1,7,100,3.8,FALSE
+82,32,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,1,365,98,4.69,FALSE
+336,1,FALSE,1,Entire rental unit,Entire home/apt,6,0,0,2,1,365,33,5,FALSE
+70,0,FALSE,18,Private room in home,Private room,1,1,1,1,30,365,99,NA,TRUE
+132,0,TRUE,6,Entire rental unit,Entire home/apt,4,1,2,2,13,365,90,NA,TRUE
+70,1,FALSE,18,Private room in home,Private room,1,1,1,1,30,365,99,5,TRUE
+39,11,FALSE,3,Private room in rental unit,Private room,2,1,1,1,1,365,100,4.82,TRUE
+39,82,FALSE,3,Private room in rental unit,Private room,2,1,1,1,1,365,100,4.88,TRUE
+111,42,FALSE,11,Entire rental unit,Entire home/apt,6,1,2,2,1,365,99,4.6,FALSE
+135,6,FALSE,17,Entire rental unit,Entire home/apt,2,1,1,1,1,365,94,4.5,FALSE
+56,1,FALSE,18,Private room in home,Private room,1,1,1,1,28,365,99,5,TRUE
+56,0,TRUE,18,Private room in home,Private room,1,1,1,1,30,365,99,NA,TRUE
+44,54,FALSE,3,Private room in rental unit,Private room,2,1,1,1,1,365,100,4.89,TRUE
+76,0,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,1,31,180,50,NA,FALSE
+98,4,FALSE,1,Entire rental unit,Entire home/apt,6,1,3,3,2,1125,100,5,FALSE
+110,4,TRUE,6,Entire rental unit,Entire home/apt,6,1,3,3,2,1125,100,3.5,FALSE
+128,29,FALSE,1,Entire home,Entire home/apt,8,2,3,3,2,365,100,4.79,TRUE
+103,5,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,97,4.6,FALSE
+84,0,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,1,31,180,50,NA,FALSE
+129,31,FALSE,11,Entire rental unit,Entire home/apt,10,1,3,3,1,1125,99,4.61,FALSE
+89,11,FALSE,5,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,99,4.18,FALSE
+77,9,FALSE,4,Entire rental unit,Entire home/apt,2,1,1,1,1,1125,99,4.67,TRUE
+126,3,TRUE,1,Entire home,Entire home/apt,6,2,2,2,7,90,100,5,FALSE
+193,50,TRUE,4,Entire home,Entire home/apt,6,1.5,3,3,1,365,98,4.9,TRUE
+NA,0,FALSE,5,Entire rental unit,Entire home/apt,4,NA,2,NA,28,365,29,NA,FALSE
+200,6,FALSE,1,Entire home,Entire home/apt,5,1,3,6,1,200,95,4,FALSE
+94,40,FALSE,1,Entire condo,Entire home/apt,4,1,2,2,2,30,100,4.68,FALSE
+296,32,TRUE,1,Entire home,Entire home/apt,8,2.5,4,4,2,1125,100,4.91,TRUE
+72,41,TRUE,1,Entire rental unit,Entire home/apt,4,1,2,4,1,1125,98,4.59,FALSE
+175,1,TRUE,6,Entire home,Entire home/apt,6,1,3,3,2,1125,100,3,FALSE
+239,1,FALSE,13,Entire rental unit,Entire home/apt,8,1,4,4,28,89,83,5,TRUE
+83,47,FALSE,1,Entire rental unit,Entire home/apt,4,1,1,2,1,28,96,4.72,FALSE
+313,14,FALSE,1,Entire home,Entire home/apt,8,2,3,5,3,90,96,5,TRUE
+152,2,FALSE,1,Entire home,Entire home/apt,5,2.5,3,3,7,30,75,5,FALSE
+68,8,TRUE,6,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,4.88,FALSE
+66,2,FALSE,13,Private room in rental unit,Private room,2,1,1,1,28,89,83,5,TRUE
+65,1,FALSE,13,Private room in rental unit,Private room,2,1,1,1,28,89,83,5,TRUE
+80,1,FALSE,13,Private room in rental unit,Private room,2,1,1,1,7,89,83,5,TRUE
+85,25,TRUE,6,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,4.68,FALSE
+44,15,TRUE,23,Room in hotel,Private room,2,1,1,1,1,21,100,4.8,FALSE
+52,15,TRUE,23,Entire rental unit,Entire home/apt,3,1,1,2,1,21,100,4.2,FALSE
+99,24,TRUE,1,Entire rental unit,Entire home/apt,6,1,3,3,1,1125,100,5,TRUE
+60,1,FALSE,13,Private room in rental unit,Private room,1,1,1,1,5,89,83,5,TRUE
+43,1,FALSE,3,Private room in rental unit,Private room,1,1,1,3,5,365,74,5,FALSE
+39,5,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4.6,FALSE
+44,13,TRUE,23,Entire rental unit,Entire home/apt,4,1,1,2,1,25,100,4.15,FALSE
+51,4,FALSE,3,Private room in home,Private room,1,1,1,3,14,365,74,5,FALSE
+34,9,TRUE,23,Entire rental unit,Entire home/apt,4,1,1,2,1,21,100,3.78,FALSE
+40,2,FALSE,5,Private room in rental unit,Private room,1,2,1,1,5,365,83,4,TRUE
+45,3,FALSE,3,Private room in home,Private room,1,1,1,3,28,365,74,5,FALSE
+NA,2,FALSE,5,Entire home,Entire home/apt,5,NA,4,NA,28,365,29,4,FALSE
+51,0,FALSE,5,Private room in home,Private room,1,1,1,1,28,365,29,NA,FALSE
+84,11,TRUE,17,Entire rental unit,Entire home/apt,2,1,1,1,2,30,100,4.55,TRUE
+92,3,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,2,28,88,5,FALSE
+114,10,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,1,365,98,4.9,FALSE
+97,0,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,NA,TRUE
+374,10,FALSE,1,Entire home,Entire home/apt,12,3.5,4,8,2,90,98,5,TRUE
+150,10,FALSE,1,Entire rental unit,Entire home/apt,4,1,2,2,1,7,90,4.9,TRUE
+103,0,TRUE,2,Entire rental unit,Entire home/apt,2,1,1,1,7,365,97,NA,TRUE
+48,11,TRUE,23,Entire rental unit,Entire home/apt,4,1,1,2,1,25,100,4.27,FALSE
+40,6,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4.33,FALSE
+77,12,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,1,2,30,92,5,TRUE
+234,0,FALSE,2,Entire home,Entire home/apt,4,2,2,2,7,90,NA,NA,FALSE
+104,19,FALSE,11,Entire rental unit,Entire home/apt,6,1,2,2,1,365,99,4.63,FALSE
+90,2,FALSE,2,Entire rental unit,Entire home/apt,4,1,3,3,2,365,89,5,NA
+129,3,TRUE,11,Entire rental unit,Entire home/apt,5,1,2,2,1,365,99,4.67,FALSE
+59,28,FALSE,2,Entire rental unit,Entire home/apt,2,1,1,1,1,365,91,4.79,FALSE
+59,10,TRUE,2,Entire rental unit,Entire home/apt,2,1,1,1,1,365,91,4.5,FALSE
+NA,2,TRUE,1,Room in hotel,Hotel room,4,NA,1,NA,1,365,96,1,FALSE
+NA,0,FALSE,3,Entire rental unit,Entire home/apt,4,NA,2,NA,31,365,86,NA,TRUE
+NA,7,TRUE,23,Entire rental unit,Entire home/apt,2,NA,1,NA,1,22,100,3.71,FALSE
+NA,2,TRUE,23,Entire rental unit,Entire home/apt,2,NA,1,NA,1,22,100,3,FALSE
+34,9,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4.63,FALSE
+39,18,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4.33,FALSE
+113,6,TRUE,15,Entire home,Entire home/apt,2,1,1,1,2,1125,99,4.5,TRUE
+48,12,FALSE,1,Entire condo,Entire home/apt,2,1,1,1,3,200,81,4.75,FALSE
+162,6,FALSE,3,Entire rental unit,Entire home/apt,4,1,2,1,2,29,93,5,TRUE
+126,22,FALSE,2,Entire condo,Entire home/apt,4,1,2,2,1,365,95,4.73,TRUE
+126,10,FALSE,2,Entire rental unit,Entire home/apt,4,1,2,2,1,365,95,4.9,TRUE
+90,0,TRUE,2,Entire rental unit,Entire home/apt,4,1,1,1,14,1125,94,NA,FALSE
+38,1,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,2,1,21,100,4,FALSE
+42,7,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4.14,FALSE
+52,1,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,5,FALSE
+170,1,FALSE,21,Entire rental unit,Entire home/apt,4,1,2,2,2,365,96,5,TRUE
+65,0,FALSE,3,Entire rental unit,Entire home/apt,2,1,1,1,2,365,87,NA,FALSE
+104,7,TRUE,17,Entire rental unit,Entire home/apt,2,1,1,1,1,365,94,4.86,FALSE
+68,2,FALSE,13,Private room in home,Private room,1,1,1,1,28,100,83,5,TRUE
+75,0,FALSE,13,Private room in home,Private room,2,1,1,1,28,89,83,NA,TRUE
+81,0,FALSE,13,Private room in home,Private room,2,1,1,1,7,89,83,NA,TRUE
+57,1,FALSE,13,Private room in home,Private room,1,1,1,1,14,89,83,5,TRUE
+72,6,FALSE,1,Entire condo,Entire home/apt,2,1,1,1,2,150,83,5,FALSE
+194,19,TRUE,4,Entire home,Entire home/apt,8,2.5,3,4,1,365,98,4.79,TRUE
+135,0,FALSE,2,Entire rental unit,Entire home/apt,4,2,2,2,3,90,NA,NA,FALSE
+218,0,FALSE,13,Entire home,Entire home/apt,8,1,4,4,28,100,83,NA,TRUE
+86,6,FALSE,5,Entire rental unit,Entire home/apt,2,1,1,1,1,365,99,4.83,TRUE
+38,1,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,5,FALSE
+62,2,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,4,FALSE
+42,7,TRUE,23,Entire rental unit,Entire home/apt,4,1,1,2,1,21,100,4.14,FALSE
+39,5,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,22,100,4.8,FALSE
+41,0,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,NA,FALSE
+34,2,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,21,100,3.5,FALSE
+111,7,TRUE,2,Entire rental unit,Entire home/apt,6,1,2,2,1,365,99,5,FALSE
+68,10,TRUE,1,Entire rental unit,Entire home/apt,3,1,1,1,1,1125,100,4.9,FALSE
+135,0,FALSE,1,Entire home,Entire home/apt,6,2,3,4,1,365,NA,NA,FALSE
+75,0,FALSE,10,Entire rental unit,Entire home/apt,2,1,1,1,7,365,11,NA,FALSE
+108,4,TRUE,1,Entire rental unit,Entire home/apt,6,1,3,3,1,365,100,4.75,FALSE
+NA,3,TRUE,6,Room in hotel,Private room,2,NA,1,NA,1,21,99,4,FALSE
+79,2,FALSE,1,Private room in home,Private room,1,1,1,1,1,90,50,5,FALSE
+138,3,TRUE,3,Entire rental unit,Entire home/apt,6,1,3,4,1,365,100,3.67,FALSE
+79,0,FALSE,6,Entire rental unit,Entire home/apt,2,1,1,1,2,365,60,NA,FALSE
+80,0,FALSE,6,Entire rental unit,Entire home/apt,3,1,1,1,2,365,60,NA,FALSE
+102,0,FALSE,6,Entire home,Entire home/apt,3,1,1,1,2,365,60,NA,FALSE
+69,0,FALSE,6,Entire home,Entire home/apt,2,1,1,1,2,365,60,NA,FALSE
+65,0,FALSE,6,Entire rental unit,Entire home/apt,2,1,1,1,2,365,60,NA,FALSE
+65,0,FALSE,6,Entire rental unit,Entire home/apt,3,1,1,1,2,365,60,NA,FALSE
+127,9,TRUE,15,Entire home,Entire home/apt,6,2,3,3,1,1125,99,4.67,TRUE
+244,1,FALSE,1,Entire home,Entire home/apt,9,2.5,3,4,5,365,100,5,FALSE
+47,1,FALSE,6,Room in hotel,Private room,2,1,1,1,1,22,99,5,FALSE
+47,3,TRUE,6,Room in hotel,Private room,2,1,1,2,1,22,99,4.67,FALSE
+53,2,TRUE,6,Room in hotel,Private room,2,1,1,2,1,22,99,5,FALSE
+130,0,FALSE,10,Entire rental unit,Entire home/apt,6,1,3,3,1,365,11,NA,FALSE
+34,1,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,5,FALSE
+101,0,FALSE,15,Entire home,Entire home/apt,2,1,1,1,1,1125,99,NA,TRUE
+83,0,FALSE,1,Entire rental unit,Entire home/apt,2,1,0,1,1,365,56,NA,FALSE
+68,0,FALSE,2,Private room in rental unit,Private room,2,1,1,2,2,363,100,NA,FALSE
+152,3,TRUE,15,Entire home,Entire home/apt,4,1,2,2,1,1125,99,5,TRUE
+69,6,FALSE,1,Entire home,Entire home/apt,5,1,2,2,1,365,79,5,TRUE
+62,0,FALSE,2,Private room in rental unit,Private room,2,1,1,1,2,365,100,NA,FALSE
+44,0,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,NA,FALSE
+42,0,TRUE,23,Entire rental unit,Entire home/apt,2,1,1,1,1,365,100,NA,FALSE
+79,0,FALSE,1,Entire rental unit,Entire home/apt,2,1,2,2,1,365,17,NA,FALSE
+200,0,TRUE,3,Entire rental unit,Entire home/apt,4,2,2,2,30,365,100,NA,FALSE
+125,0,FALSE,2,Entire rental unit,Entire home/apt,8,1,2,5,2,365,99,NA,FALSE
+137,0,FALSE,1,Entire rental unit,Entire home/apt,2,1,1,2,3,15,100,NA,FALSE
+40,0,TRUE,18,Private room in home,Private room,1,2,1,1,28,365,99,NA,TRUE
+53,0,TRUE,6,Room in hotel,Private room,2,1,1,2,1,22,99,NA,FALSE
+53,0,FALSE,6,Room in hotel,Private room,2,1,1,2,1,22,99,NA,FALSE

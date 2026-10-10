@@ -1,0 +1,947 @@
+---
+title: "What Influences Listing Prices in Albany? An Airbnb Analysis"
+author:
+  - ClassPartner
+  - Winston Le
+format:
+  pdf:
+    fontsize: 11pt
+    geometry: margin = 1in
+    mainfont: "Latin Modern Roman"
+    sansfont: "Latin Modern Roman"
+editor: visual
+execute:
+  include: false
+  echo: false
+  eval: true
+  warning: false
+  message: false
+---
+
+# Abstract
+
+Pricing in short-term rental markets reflects a combination of property features, host characteristics, and market competition. Understanding which factors are most strongly associated with listing prices can provide insight into how hosts market their properties and how guests evaluate accommodation options. This report analyzes 478 short-term rental listings in Albany using publicly available data compiled by Inside Airbnb from listings on Airbnb. Multiple linear regressions were used to examine relationships between listing price and a range of listing and host characteristics. We found listings that accommodate more guests and those hosted by superhosts were associated with higher prices, while listings categorized as private rooms or hotel rooms were priced lower than entire homes. Additionally, listings that allowed instant booking and those with a greater number of reviews were associated with lower prices. The findings suggest that both listing and host attributes contribute to price differences across short-term rental listings in Albany.
+
+# Introduction
+
+Online short-term rental platforms such as Airbnb have significantly changed the way people travel and book accommodations over the last two decades. For instance, instead of staying exclusively in traditional hotels, travelers can now rent private rooms, apartments, or entire homes from individual hosts. As the popularity of these platforms has grown, the variation in listing prices has grown as well. Knowing what drives these differences in price has become an important question for both hosts and guests participating in the short-term rental market.
+
+In Albany, the New York state capital and a regional hub for tourism and government travel, Airbnb listings range from small private rooms to entire homes that accommodate larger groups. These listings differ in several key features, such as the number of bedrooms, bathrooms, beds, and the maximum number of guests they can accommodate. Host characteristics, such as whether the host is a “superhost,” their acceptance rate, or whether the listing allows instant booking, could also influence pricing. Understanding the factors that influence Airbnb prices allows hosts to price their listings competitively and guests to better assess their lodging options. Through multiple linear regressions, this report aims to determine which listing and host characteristics are most strongly associated with Airbnb prices in Albany.
+
+# Methods
+
+The data used in this analysis were obtained from Inside Airbnb, which compiles publicly available information from listings on Airbnb. The dataset contains 478 observations, with each row representing a listing in Albany and each column representing a listing or host characteristic.
+
+Multiple linear regressions were used to examine the relationship between listing characteristics and nightly price. We used the natural logarithm of nightly price as our dependent variable to better satisfy linear regression assumptions. The predictors considered were: the number of reviews, the number of listings a host had, maximum listing capacity, the number of bathrooms, bedrooms, and beds, the minimum number of nights to stay, the maximum number of nights to stay, the host's acceptance rate, and the host's rating, included as continuous variables; and the listing's instant booking capacity, the host's superhost status, and the listing's room type, included as categorical variables. Listing property type was excluded to decrease model complexity and improve coefficient estimate stability.
+
+A full model including all predictors was first fit. Best subset selection was then used to identify a more parsimonious model. To assess the impact of high leverage points, observations with leverage greater than $2p/n$ for the number of parameters $p$ and observations $n$ were identified as high-leverage points and removed, and best-subsets regression was repeated. We report results with high leverage points removed to ensure that the model is not disproportionately influenced by a few extreme observations. Statistical significance was evaluated with the threshold $\alpha = 0.05$, and mean estimates were reported with $95\%$ confidence intervals. After the final model was constructed, bootstrapping was used to assess if listings with missing prices were significantly different from listings with prices (for technical details, see Appendix B). The bootstrap statistic considered was the difference in means for a given predictor for listings that do not vs. do have observed prices.
+
+# Results
+
+Table 1 (see Appendix A) gives summary statistics on the listings for each variable of interest. The mean listing price was $\$111$ with a standard deviation of $\$87$, with prices following an approximately normal distribution. Some listings had very high prices, with the maximum price in the data being $\$960$. Out of the $478$ observations, $360$ listings were not instantly bookable (hence were not commercial listings) and $349$ were the entire home/apartment.
+
+The results of the multiple linear regression models are presented in Table 2 (see Appendix A). Column (1) gives coefficient estimates, confidence intervals, and $p$-values associated with a regression on all predictors, excluding property type. Columns (2) and (3) give these values for a regression model built using best subsets selection, including and excluding high leverage points, respectively. We ran our final analysis using the variables included in Column (3). We found several predictors consistently associated with listing price. Listings that accommodated more guests were associated with higher prices, with a $12.4\%$ increase in price for each additional guest accommodated $(95\% \text{CI: } (0.096, 0.152); p < 0.001)$. Listings hosted by superhosts were associated with a $13.3\%$ increase in price compared to non-superhosts $(95\% \text{CI: } (0.055, 0.211); p = 0.001)$.
+
+Additionally, some predictors were associated with lower listing prices. Listings classified as private rooms or hotel rooms were associated with a $23.1\%$ decrease in price relative to an entire home $(95\% \text{CI: } (−0.326, −0.136); p < 0.001)$. Also, listings that allowed instant booking were associated with a $13.3\%$ decrease in price $(95\% \text{CI: } (−0.218, −0.048); p = 0.003)$. A greater number of reviews was associated with $0.04\%$ decrease in price per additional review $(95\% \text{CI: } (−0.001, −0.0001); p = 0.019)$. Similarly, an increase in the number of listings managed by a host was associated with a $0.6\%$ decrease in price $(95\% \text{CI: } (−0.010, −0.001); p = 0.025)$.
+
+We also found that a greater number of beds was associated with slightly higher prices $(\beta = 0.042; 95\% \text{CI: } (−0.007, 0.091); p = 0.093)$, although this effect was not consistently statistically significant across models. The maximum nights allowed was associated with a small increase in price $(\beta = 0.0001; 95\% \text{CI: } (0.00001, 0.0002); p = 0.025)$. Other predictors, including the number of bathrooms, number of bedrooms, minimum nights, and review scores, were not consistently associated with listing price across the models.
+
+In the data, $42$ listings do not include prices. The variables that were not significantly different for listings with prices that were vs. were not missing are the number of listings a host had $(\text{CI: }(-1.9932, 2.3003))$, accommodation capacity $(\text{CI: }(-0.7642, 0.5406))$, the number of bedrooms $(\text{CI: }(-0.1841, 0.4791))$, the minimum $(\text{CI: }(-0.53, 34.48))$ and maximum number of nights $(\text{CI: }(-208.3, 3.9))$, and the host's acceptance rate $(\text{CI: }(-19.292, 2.598))$. The variables that were significantly different were the number of reviews $(\text{CI: }(-60.29, -32.08))$, a host's instant booking status $(\text{CI: }(0.0436, 0.3521))$, a host's rating $(\text{CI: }(-0.6386, -0.0885))$, and their superhost status $(\text{CI: }(-0.4446, -0.1903))$.
+
+# Discussion
+
+We found that one of the strongest predictors of AirBnb listing price was accommodation capacity, with listings able to host more guests tending to have higher prices. This pattern is intuitive as larger properties offer more space and amenities and are suitable for groups, allowing hosts to charge higher nightly rates. Similarly, private rooms or hotel rooms were consistently priced lower than entire homes. Entire homes typically provide greater privacy and access to the full property, which likely justifies higher prices.
+
+Host characteristics also appeared to influence pricing. Listings hosted by superhosts were associated with higher prices, which may reflect the greater reputation and trust associated with hosts who consistently receive high ratings and maintain strong hosting standards. Interestingly, listings that allowed instant booking were associated with slightly lower prices. One possible explanation is that hosts offering instant booking may be more likely to be corporate hosts, who use their scale to manage high-volume bookings more efficiently.
+
+Surprisingly, several variables that were expected to influence price, such as the number of bedrooms, bathrooms, or minimum nights, were not consistently associated with price in the models. This may be because these characteristics are partially captured by other variables, such as accommodation capacity, or because there is relatively little variation in these features among listings in the dataset.
+
+However, this analysis has certain limitations. First, the dataset includes only 478 listings, which may limit the ability to detect smaller effects and not fully represent the broader Airbnb market. Additionally, the data were obtained from publicly available listings and may not capture all factors that influence pricing, such as neighborhood location, amenities, seasonal demand, or host pricing strategies. Finally, the presence of observations with missing prices may have biased our estimates' magnitudes, directions, and statistical significance levels.
+
+# Conclusion
+
+This report examines how listing and host characteristics are associated with Airbnb prices in Albany. We found that accommodation capacity, room type, and superhost status were among the strongest predictors of price. In particular, listings that accommodated more guests and those hosted by superhosts tended to have higher prices, while private rooms or hotel rooms were typically priced lower than entire homes. Overall, the analysis provides insight into factors associated with Airbnb pricing in Albany and may help both hosts and guests better understand the characteristics that influence variation in listing prices.
+
+\pagebreak
+
+# Appendix
+
+```{r}
+#################################### Set-up ####################################
+
+# Load libraries
+## Libraries with extra comments are ones we haven't used before, so you must
+## install them
+# install.packages("ggpubr")
+# install.packages("vtable")
+# install.packages("leaps")
+# install.packages("stargazer")
+# install.packages("car")
+# install.packages("boot")
+
+library(tidyverse)
+library(broom)
+library(GGally)
+library(gridExtra)
+library(tinytex)
+library(ggpubr) # For rendering plots
+library(vtable) # For making data summary statistics table 
+library(leaps) # For making best subsets model
+library(stargazer) # For making regression summary table
+library(car) # For making AV plots
+library(boot) # For bootstrapping
+```
+
+```{r}
+# Load data
+albany_airbnb <- read_csv("albany-airbnb.csv")
+```
+
+```{r}
+##################################### EDA #####################################
+
+# Inspect data
+head(albany_airbnb)
+summary(albany_airbnb)
+nrow(albany_airbnb)
+```
+
+```{r}
+# Reformat data
+# Turn character values into factor values
+airbnb <- albany_airbnb %>% mutate(instant_bookable = factor(instant_bookable),
+                                   property_type = factor(property_type),
+                                   room_type = factor(room_type),
+                                   host_is_superhost = factor(host_is_superhost))
+```
+
+```{r}
+# We render this table in the appendix (scroll down to bottom)
+
+# Make summary stats (N, min, max, mean, and SD) table 
+# including every variable
+table.summary <- airbnb %>% st(out = "latex",
+                               fit.page = "\\textwidth",
+                               summ.names = c("N", 
+                                              "Mean", 
+                                              "SD", 
+                                              "Minimum",
+                                              "25th Pctl.",
+                                              "75th Pctl.",
+                                              "Maximum"), 
+                               labels = data.frame(price = "Price",
+                                          number_of_reviews = "Number of Reviews",
+                                          instant_bookable = "Instant Booking?",
+                                          calculated_host_listings_count = "Calculated Host 
+                                          Listing Count",
+                                          property_type = "Property Type",
+                                          room_type = "Room Type",
+                                          accommodates = "Accommodation Capacity",
+                                          bathrooms = "Number of Bathrooms",
+                                          bedrooms = "Number of Bedrooms",
+                                          beds = "Number of Beds",
+                                          minimum_nights = "Minimum Nights",
+                                          maximum_nights = "Maximum Nights",
+                                          host_acceptance_rate = "Host Acceptance Rate",
+                                          review_scores_rating = "Review Scores Rating",
+                                          host_is_superhost = "Host is Superhost"),
+                               title = "Summary Statistics on Albany Airbnb Listings (N = 
+                               478)"
+                               )
+```
+
+```{r}
+# Make histograms and bar charts
+hist.price <- airbnb %>% ggplot(aes(x = price)) + 
+                                geom_histogram() +
+                                theme_bw() + 
+                                labs(title = "Histogram of Price",
+                                x = "Price",
+                                y = "Count")
+
+hist.reviews <- airbnb %>% ggplot(aes(x = number_of_reviews)) + 
+                                  geom_histogram() +
+                                  theme_bw() + 
+                                  labs(title = "Histogram of Review Quantity",
+                                  x = "Number of reviews",
+                                  y = "Count")
+
+bar.bookable <- airbnb %>% ggplot(aes(x = instant_bookable)) + 
+                                  geom_bar() +
+                                  theme_bw() + 
+                                  labs(title = "Bar Chart of Instant Bookability",
+                                  x = "Can the listing be instantly booked?",
+                                  y = "Count")
+
+hist.listings_count <- airbnb %>% ggplot(aes(x = calculated_host_listings_count)) + 
+                                        geom_histogram() +
+                                        theme_bw() + 
+                                        labs(title = "Histogram of Listing Count",
+                                        x = "Number of host listings",
+                                        y = "Count")
+
+# bar.property <- airbnb %>% ggplot(aes(x = property_type)) + 
+#                               geom_bar() +
+#                               theme_bw() + 
+#                               labs(title = "Bar Chart of Property Type",
+#                               x = "Property Type",
+#                               y = "Count")
+# There are many distinct values for property type, so a bar chart for it
+# looks very messy. The summary table tells us what we want to know about
+# property type anyways
+
+bar.room <- airbnb %>% ggplot(aes(x = room_type)) + 
+                              geom_bar() +
+                              theme_bw() + 
+                              labs(title = "Bar Chart of Room Type",
+                              x = "Room type",
+                              y = "Count")
+
+hist.accommodates <- airbnb %>% ggplot(aes(x = accommodates)) + 
+                                      geom_histogram(bins = 15) +
+                                      theme_bw() + 
+                                      labs(title = "Histogram of Accommodation Capacity",
+                                      x = "Capacity",
+                                      y = "Count")
+
+hist.bathrooms <- airbnb %>% ggplot(aes(x = bathrooms)) + 
+                                    geom_histogram(bins = 12) +
+                                    theme_bw() + 
+                                    labs(title = "Histogram of Bathroom Quantity",
+                                    x = "Number of bathrooms",
+                                    y = "Count")
+
+hist.bedrooms <- airbnb %>% ggplot(aes(x = bedrooms)) + 
+                                  geom_histogram(bins = 11) +
+                                  theme_bw() + 
+                                  labs(title = "Histogram of Bedroom Quantity",
+                                  x = "Number of bedrooms",
+                                  y = "Count")
+
+hist.beds <- airbnb %>% ggplot(aes(x = beds)) + 
+                              geom_histogram(bins = 11) +
+                              theme_bw() + 
+                              labs(title = "Histogram of Bed Quantity",
+                              x = "Number of beds",
+                              y = "Count")
+
+hist.min_nights <- airbnb %>% ggplot(aes(x = minimum_nights)) + 
+                                    geom_histogram(bins = 19) +
+                                    theme_bw() + 
+                                    labs(title = "Histogram of Minimum Nights",
+                                    x = "Minimum Nights",
+                                    y = "Count")
+
+hist.max_nights <- airbnb %>% ggplot(aes(x = maximum_nights)) + 
+                                    geom_histogram(bins = 42) +
+                                    theme_bw() + 
+                                    labs(title = "Histogram of Maximum Nights",
+                                    x = "Maximum Nights",
+                                    y = "Count")
+
+hist.acceptance <- airbnb %>% ggplot(aes(x = host_acceptance_rate)) + 
+                                    geom_histogram() +
+                                    theme_bw() + 
+                                    labs(title = "Histogram of Host Acceptance Rate",
+                                    x = "Acceptance rate",
+                                    y = "Count")
+
+hist.rating <- airbnb %>% ggplot(aes(x = review_scores_rating)) + 
+                                geom_histogram() +
+                                theme_bw() + 
+                                labs(title = "Histogram of Review Ratings",
+                                x = "Review score rating",
+                                y = "Count")
+
+bar.super <- airbnb %>% ggplot(aes(x = host_is_superhost)) + 
+                                  geom_bar() +
+                                  theme_bw() + 
+                                  labs(title = "Bar Chart of Superhost Status",
+                                  x = "Is the host a Superhost?",
+                                  y = "Count")
+
+# Arrange plots
+plots.eda_1 <- grid.arrange(hist.price, hist.reviews, 
+                         bar.bookable, hist.listings_count, 
+                         bar.room, hist.accommodates, 
+                         hist.bathrooms,
+                         nrow = 3, ncol = 3)
+## Price is approximately normal, but some listings have very high prices
+## Review quantity histogram indicates some listings with high counts
+plots.eda_2 <- grid.arrange(hist.bedrooms, 
+                         hist.beds, hist.min_nights, 
+                         hist.max_nights, hist.acceptance, 
+                         hist.rating, bar.super,
+                         nrow = 3, ncol = 3)
+## Most listings have a low min. nights, but some are very high (see summary table)
+```
+
+```{r}
+################################### Modeling ###################################
+
+# Drop property type variable
+## The summary table indicates that there are a lot of distinct property types, 
+## with many different  N values (some large, some very small). This would mean 
+## that running a regression that includes property
+## type for observations with small N would indicate
+## significance, solely because that one property type
+## has an effect associated with it -- even if that
+## effect is just noise. Also, the room_type variable
+## captures the property_type anyways. property_type is
+## just more specific about the kind of listing available
+airbnb <- airbnb %>% select(!property_type)
+
+## We also don't center variables at their means. Usually, you do this
+```
+
+```{r}
+# Fit full model
+fit.full <- lm(price ~ . , data = airbnb)
+```
+
+```{r}
+# Conduct best subsets selection
+## We use best subsets to avoid the risk of selecting too many predictors, some
+## of which may be correlated. For example, if a listing has a lot of bedrooms,
+## it probably has a lot of beds too. So we use best subsets to find the "best"
+## model directly. There are also not that many models to consider total
+## (at least for a computer), so we don't have to worry about resource use
+
+# Get best subsets
+subsets <- regsubsets(price ~ . , data = airbnb)
+summary.subsets <- summary(subsets)
+data.frame(cbind(summary.subsets$which, AdjR2 = summary.subsets$adjr))
+
+# Make model with best subsets
+fit.subsets <- lm(price ~ number_of_reviews + 
+                          room_type + 
+                          accommodates + 
+                          bathrooms + 
+                          beds + 
+                          minimum_nights + 
+                          host_acceptance_rate + 
+                          review_scores_rating + 
+                          host_is_superhost, 
+                  data = airbnb)
+```
+
+```{r}
+# Examine models
+summary(fit.full)
+summary(fit.subsets)
+```
+
+```{r}
+# Produce summary statistics table for full and subsets model
+stargazer(fit.full, fit.subsets, ci = TRUE, ## Stargazer automatically uses 95% as the conf. level
+                                 type = "latex", 
+                                 intercept.bottom = FALSE,
+                                 dep.var.labels = c("Price"),
+                                 covariate.labels = c("Intercept",
+                                                      "Number of Reviews",
+                                                      "Instant Bookability (Reference = False)", 
+                                                      "Calculated Host Listings Count",
+                                                      "Room Type (Reference = Entire Home)", 
+                                                      "Accommodation Capacity", 
+                                                      "Number of Bathrooms", 
+                                                      "Number of Bedrooms", 
+                                                      "Number of Beds",
+                                                      "Minimum Nights", 
+                                                      "Maximum Nights", 
+                                                      "Host Acceptance Rate",
+                                                      "Review Scores Rating",
+                                                      "Host is Superhost (Reference = False)"
+                                                      ))
+```
+
+```{r}
+############################ Assessing assumptions ############################
+
+################################## Linearity ##################################
+
+# Make AV plots
+avPlots(fit.subsets)
+## AV plots indicate linearity, but it isn't immediately obvious. There are
+## also a lot of points far from the others
+
+################################# Independence #################################
+
+## Independence is given based on the way Inside Airbnb collects data, and the
+## nature of the data. It seems fair to say listings are independent, at least
+## in the sense that knowing how the characteristics of one listing tells us
+## nothing about the characteristics of another listing
+
+################################## Normality ##################################
+
+# Prepare augmented dataframe
+augmented <- augment(fit.subsets)
+head(augmented)
+
+# Make residual histogram
+augmented %>% ggplot(aes(x = .resid)) + geom_histogram()
+## Plot shows normal distribution of residuals around 0, but some residuals are
+## very high, giving the distribution a slight right skew
+
+# Make QQ plot
+augmented %>% ggplot() + stat_qq(aes(sample = augmented$.resid)) + 
+                                    theme_bw() + 
+                                    geom_abline(slope = sd(augmented$.resid), 
+                                                intercept = 0, 
+                                                col = "red", 
+                                                lty = 2) +
+                                    labs(title = "Normal Quantile (QQ) Plot", 
+                                         x = "Theoretical Quantiles", 
+                                         y = "Residuals")
+## Plot shows points that almost follow diagonal, along with some points far
+## off of the line at ends.
+
+################################ Equal variance ################################
+
+# Make residuals vs. fitted plot
+augmented %>% ggplot(aes(x = .fitted, y = .resid)) + geom_point()
+## Plot indicates random scatter of residuals around 0, but variance increases
+## with the fitteds.
+
+## Altogether, our linearity, normality, and  equal variance assumptions are 
+## met, but not as strongly as we want. The relationship between price and our
+## predictors seem to be linear, so it probably isn't necessary to transform
+## any covariate. But our residual histogram, QQ plot, and resid. vs fitted. 
+## plot are not completely satisfying. They indicate that we should transform
+## our price variable. To address the presence of listings with very high
+## prices (see the EDA histogram), we proceed by taking the natural log of 
+## price (after looking at unusual points)
+```
+
+```{r}
+################################ Unusual points ################################
+
+# Save p = number of regression parameters
+p <- length(fit.subsets$coeff)
+# Save n = sample size
+n <- nrow(airbnb)
+
+# Plot leverage
+lev <- data.frame(hatvalues(fit.subsets)) %>%
+    ggplot(aes(x = 1:length(hatvalues(fit.subsets)), hatvalues(fit.subsets))) +
+    geom_point() +
+    labs(title = "Leverage",
+         x = "x", 
+         y = "Leverage") + 
+    geom_hline(yintercept = 2*p/n, lty = "dashed", col = "orange")
+
+# Plot standardized residuals
+stdresid <- data.frame(rstandard(fit.subsets)) %>%
+    ggplot(aes(x = 1:length(rstandard(fit.subsets)), rstandard(fit.subsets))) +
+    geom_point() +
+    labs(title = "Standardized Residuals",
+         x = "x", 
+         y = "Standardized Residuals") + 
+    geom_hline(yintercept = 2, lty = "dashed", col = "orange")
+
+# Plot studentized residuals
+studresid <- data.frame(rstudent(fit.subsets)) %>%
+    ggplot(aes(x = 1:length(rstudent(fit.subsets)), rstudent(fit.subsets))) +
+    geom_point() +
+    labs(title = "Studentized Residuals",
+         x = "x", 
+         y = "Studentized Residuals") + 
+    geom_hline(yintercept = 3, lty = "dashed", col = "orange")
+
+
+# Plot Cook's distances
+cooks <- data.frame(cooks.distance(fit.subsets)) %>%
+    ggplot(aes(x = 1:length(cooks.distance(fit.subsets)), cooks.distance(fit.subsets))) +
+    geom_point() +
+    labs(title = "Cooks Distance",
+         x = "x", 
+         y = "Cooks Distance") + 
+    geom_hline(yintercept = 1, lty = "dashed", col = "orange")
+
+# Arrange plots
+grid.arrange(lev, stdresid, studresid, cooks, ncol = 2)
+## Plots indicate that there are some points with very high leverage, and high 
+## standardized / studentized resids -- but none with high influence
+
+## Combined with results from our above diagnostic plots, our plan will be to 
+## take the natural log of price and refit the full and best subsets MLR models
+```
+
+```{r}
+############################### Transformations ###############################
+
+# Add log price column to data
+airbnb_log <- airbnb %>% mutate(log_price = log(price))
+```
+
+```{r}
+# Fit full model
+fit.full_log <- lm(log_price ~ . - price, data = airbnb_log)
+```
+
+```{r}
+# Conduct best subsets selection, with log(price)
+
+# Get best subsets
+subsets <- regsubsets(log_price ~ . - price , data = airbnb_log)
+summary.subsets <- summary(subsets)
+data.frame(cbind(summary.subsets$which, AdjR2 = summary.subsets$adjr))
+
+# Make model with best subsets
+fit.subsets_log <- lm(log_price ~ number_of_reviews + 
+                        instant_bookable +
+                        calculated_host_listings_count + 
+                        room_type + 
+                        accommodates + 
+                        beds + 
+                        maximum_nights + 
+                        review_scores_rating + 
+                        host_is_superhost, 
+                      data = airbnb_log)
+```
+
+```{r}
+# Examine models
+summary(fit.full_log)
+summary(fit.subsets_log)
+```
+
+```{r}
+# Produce summary statistics table for transformed full and subsets model
+table.summary_model <- stargazer(fit.full_log, fit.subsets_log, 
+                        ci = TRUE, 
+                        header = FALSE, 
+                        suppress.errors = TRUE,
+                        font.size = "footnotesize",
+                        title = "Multiple Linear Regression Results on Listing Price", 
+                        no.space = FALSE,
+                        single.row = TRUE,
+                        type = "latex", 
+                        intercept.bottom = FALSE,
+                        dep.var.labels = c("Log Price"),
+                        covariate.labels = c("Intercept", 
+                                             "Number of Reviews", 
+                                             "Instant Bookability (Reference = False)", 
+                                             "Calculated Host Listings Count", 
+                                             "Room Type (Reference = Entire Home)", 
+                                             "Accommodation Capacity", 
+                                             "Number of Bathrooms", 
+                                             "Number of Bedrooms", 
+                                             "Number of Beds", 
+                                             "Minimum Nights", 
+                                             "Maximum Nights", 
+                                             "Host Acceptance Rate", 
+                                             "Review Scores Rating", 
+                                             "Host is Superhost (Reference = False)"))
+```
+
+```{r}
+########################### Assessing assumptions 2 ###########################
+
+################################## Linearity ##################################
+
+# Make AV plots
+avPlots(fit.subsets_log)
+## Overall, linear trends btwn. each predictor and price are visible (mostly)
+
+################################# Independence #################################
+
+## Yes (see above)
+
+################################## Normality ##################################
+
+# Prepare augmented dataframe
+augmented_log <- augment(fit.subsets_log)
+head(augmented_log)
+
+# Make residual histogram
+augmented_log %>% ggplot(aes(x = .resid)) + geom_histogram()
+## Plot shows normal distribution of residuals around 0, as desired. The high
+## residuals from before the log transform are gone, which is good
+
+# Make QQ plot
+augmented_log %>% ggplot() + stat_qq(aes(sample = augmented_log$.resid)) + 
+                                    theme_bw() + 
+                                    geom_abline(slope = sd(augmented_log$.resid), 
+                                                intercept = 0, 
+                                                col = "red", 
+                                                lty = 2) +
+                                    labs(title = "Normal Quantile (QQ) Plot", 
+                                         x = "Theoretical Quantiles", 
+                                         y = "Residuals")
+## Plot shows points that much more closely follow the diagonal, as desired.
+## The points at the end that don't follow the diagonal are not as far from it,
+## which is an improvement from before the log transform
+
+################################ Equal variance ################################
+
+# Make residuals vs. fitted plot
+augmented_log %>% ggplot(aes(x = .fitted, y = .resid)) + geom_point()
+## Plot shows equal scatter of residuals around 0. The increase in variance
+## is also much smaller
+
+## Altogether, it seems our plan to fit the model on ln(price) was a good idea.
+## Our assumptions are met, but it remains to check for unusual points
+```
+
+```{r}
+############################### Unusual points 2 ###############################
+
+# Save p = number of regression parameters
+p <- length(fit.subsets_log$coeff)
+# Save n = sample size
+n <- nrow(airbnb_log)
+
+# Plot leverage
+lev_log <- data.frame(hatvalues(fit.subsets_log)) %>%
+    ggplot(aes(x = 1:length(hatvalues(fit.subsets_log)), hatvalues(fit.subsets_log))) +
+    geom_point() +
+    labs(title = "Leverage",
+         x = "x", 
+         y = "Leverage") + 
+    geom_hline(yintercept = 2*p/n, lty = "dashed", col = "orange")
+
+# Plot standardized residuals
+stdresid_log <- data.frame(rstandard(fit.subsets_log)) %>%
+    ggplot(aes(x = 1:length(rstandard(fit.subsets_log)), rstandard(fit.subsets_log))) +
+    geom_point() +
+    labs(title = "Standardized Residuals",
+         x = "x", 
+         y = "Standardized Residuals") + 
+    geom_hline(yintercept = 2, lty = "dashed", col = "orange")
+
+# Plot studentized residuals
+studresid_log <- data.frame(rstudent(fit.subsets_log)) %>%
+    ggplot(aes(x = 1:length(rstudent(fit.subsets_log)), rstudent(fit.subsets_log))) +
+    geom_point() +
+    labs(title = "Studentized Residuals",
+         x = "x", 
+         y = "Studentized Residuals") + 
+    geom_hline(yintercept = 3, lty = "dashed", col = "orange")
+
+
+# Plot Cook's distances
+cooks_log <- data.frame(cooks.distance(fit.subsets_log)) %>%
+    ggplot(aes(x = 1:length(cooks.distance(fit.subsets_log)), cooks.distance(fit.subsets_log))) +
+    geom_point() +
+    labs(title = "Cooks Distance",
+         x = "x", 
+         y = "Cooks Distance") + 
+    geom_hline(yintercept = 1, lty = "dashed", col = "orange")
+
+# Arrange plots
+grid.arrange(lev_log, stdresid_log, studresid_log, cooks_log, ncol = 2)
+## Presence of points with leverage persist, but leverage is lower and
+## influence is almost zero after the ln transform -- to confirm, we will do a 
+## sensitivity analysis by excluding these points, refitting the best subsets 
+## MLR, and comparing coefficients and 95%CI's
+```
+
+```{r}
+############################# Sensitivity analysis #############################
+
+# Make new dataframe without high leverage points
+airbnb_log_sens <- airbnb_log[ -c(which(hatvalues(fit.subsets_log) > (2 * p)/n)), ]
+
+# Fit best subsets MLR on new dataframe
+# Get best subsets
+subsets_sens <- regsubsets(log_price ~ . - price , data = airbnb_log)
+summary.subsets_sens <- summary(subsets)
+data.frame(cbind(summary.subsets_sens$which, AdjR2 = summary.subsets_sens$adjr))
+
+# Make model with best subsets
+fit.subsets_log_sens <- lm(log_price ~ number_of_reviews + 
+                        instant_bookable +
+                        calculated_host_listings_count + 
+                        room_type + 
+                        accommodates + 
+                        beds + 
+                        maximum_nights + 
+                        review_scores_rating + 
+                        host_is_superhost, 
+                      data = airbnb_log_sens)
+
+# Inspect model
+summary(fit.subsets_log_sens)
+```
+
+```{r}
+# Compare log model to log model w/o high leverage points
+table.summary_sens <- stargazer(fit.subsets_log, fit.subsets_log_sens, 
+                      ci = TRUE, 
+                      header = FALSE, 
+                      suppress.errors = TRUE,
+                      font.size = "footnotesize",
+                      title = "Regression Results Including and Not Including High Leverage Points",
+                      type = "latex", 
+                      intercept.bottom = FALSE,
+                      dep.var.labels = c("Log Price"),
+                      covariate.labels = c("Intercept", 
+                                           "Number of Reviews", 
+                                           "Instant Bookability (Reference = False)", 
+                                           "Calculated Host Listings Count", 
+                                           "Room Type (Reference = Entire Home)", 
+                                           "Accommodation Capacity", 
+                                           "Number of Beds", 
+                                           "Maximum Nights", 
+                                           "Review Scores Rating", 
+                                           "Host is Superhost (Reference = False)"))
+## Coefficients and 95% CIs don't seem to change much after points are removed.
+## The table indicates that the same predictors are included in each best 
+## subsets model. However, significance levels do change for some predictors.
+## For example, the coefficient for bed count goes from significant at
+## alpha < 0.05 to alpha < 0.1. So at our significance level of alpha = 0.05,
+## there are some predictors losing significance
+```
+
+```{r}
+# We render this table in the appendix (scroll down to bottom)
+
+table.summary_model_all <- stargazer(fit.full_log, fit.subsets_log, fit.subsets_log_sens,
+                            ci = TRUE, 
+                            header = FALSE, 
+                            suppress.errors = TRUE,
+                            font.size = "tiny",
+                            title = "Multiple Linear Regression Results on Listing Price", 
+                            type = "latex", 
+                            report = "vc*sp",
+                            intercept.bottom = FALSE,
+                            dep.var.labels = c("Log Price"),
+                            covariate.labels = c("Intercept", 
+                                                 "Number of Reviews", 
+                                                 "Instant Bookability (Reference = False)", 
+                                                 "Calculated Host Listings Count", 
+                                                 "Room Type (Reference = Entire Home)", 
+                                                 "Accommodation Capacity", 
+                                                 "Number of Bathrooms", 
+                                                 "Number of Bedrooms", 
+                                                 "Number of Beds", 
+                                                 "Minimum Nights", 
+                                                 "Maximum Nights", 
+                                                 "Host Acceptance Rate", 
+                                                 "Review Scores Rating", 
+                                                 "Host is Superhost (Reference = False)"))
+```
+
+```{r}
+albany_airbnb <- read_csv("albany-airbnb.csv")
+airbnb_stats <- albany_airbnb %>% mutate(instant_bookable = factor(instant_bookable),
+                                   property_type = factor(property_type),
+                                   room_type = factor(room_type),
+                                   host_is_superhost = factor(host_is_superhost))
+```
+
+## Appendix A
+
+```{r, results='asis'}
+#| include: TRUE
+
+# Make summary stats (N, min, max, mean, and SD) table 
+# including every variable
+table.summary <- airbnb_stats %>% st(out = "latex",
+                               fit.page = "0.95\\textwidth",
+                               summ.names = c("N", 
+                                              "Mean", 
+                                              "SD", 
+                                              "Minimum",
+                                              "25th Pctl.",
+                                              "75th Pctl.",
+                                              "Maximum"), 
+                               labels = data.frame(price = "Price",
+                                          number_of_reviews = "Number of Reviews",
+                                          instant_bookable = "Instant Booking?",
+                                          calculated_host_listings_count = "Calculated Host 
+                                          Listing Count",
+                                          property_type = "Property Type",
+                                          room_type = "Room Type",
+                                          accommodates = "Accommodation Capacity",
+                                          bathrooms = "Number of Bathrooms",
+                                          bedrooms = "Number of Bedrooms",
+                                          beds = "Number of Beds",
+                                          minimum_nights = "Minimum Nights",
+                                          maximum_nights = "Maximum Nights",
+                                          host_acceptance_rate = "Host Acceptance Rate",
+                                          review_scores_rating = "Review Scores Rating",
+                                          host_is_superhost = "Host is Superhost"),
+                               title = "Summary Statistics on Albany Airbnb Listings (N = 
+                               478)"
+                               )
+```
+
+```{r, results='asis'}
+#| include: TRUE
+
+# Make regression table for all models
+table.summary_model_all <- stargazer(fit.full_log, fit.subsets_log, fit.subsets_log_sens,
+                            ci = TRUE, 
+                            header = FALSE, 
+                            suppress.errors = TRUE,
+                            font.size = "scriptsize",
+                            title = "Multiple Linear Regression Results on Listing Price", 
+                            type = "latex", 
+                            report = "vc*sp",
+                            intercept.bottom = FALSE,
+                            dep.var.labels = c("Log Price"),
+                            covariate.labels = c("Intercept", 
+                                                 "Number of Reviews", 
+                                                 "Instant Bookability (Reference = False)", 
+                                                 "Calculated Host Listings Count", 
+                                                 "Room Type (Reference = Entire Home)", 
+                                                 "Accommodation Capacity", 
+                                                 "Number of Bathrooms", 
+                                                 "Number of Bedrooms", 
+                                                 "Number of Beds", 
+                                                 "Minimum Nights", 
+                                                 "Maximum Nights", 
+                                                 "Host Acceptance Rate", 
+                                                 "Review Scores Rating", 
+                                                 "Host is Superhost (Reference = False)"))
+```
+
+\pagebreak
+
+## Appendix B
+
+```{r}
+# Check influence of listings with missing price
+## Intuitively, if the characteristics of listings with missing price are about
+## the same as those for listings with prices, then their impact on our estimates
+## should be low. And, if they are significantly different, then they will bias
+## our estimates. One way to check characteristics is by comparing means through
+## bootstrapping. We use bootstrapping so as to not make assumptions about the 
+## distribution of characteristics
+
+# Load libraries (done above)
+## install.packages("boot")
+## library(boot)
+```
+
+```{r}
+# Add indicator for missing price
+airbnb_na <- airbnb %>% mutate(na_indicator = as.numeric(is.na(price)))
+```
+
+```{r}
+# Define mean difference function
+mean_diff <- function(data, index)
+{
+  d <- data[index, ] # For resampling purposes
+  
+  mean_na <- mean(d[[1]] [d$na_indicator == 1], na.rm = TRUE) 
+  ## d[1] is the vector containing values for the variable of interest
+  ## We use double brackets to obtain it directly, basically to get the list's
+  ## elements
+  mean_no_na <- mean(d[[1]] [d$na_indicator == 0], na.rm = TRUE)
+  
+  return(mean_na - mean_no_na)
+}
+```
+
+```{r}
+# Set seed for reproducibility
+set.seed(242)
+```
+
+```{r}
+# Prepare dataframes for variables of interest
+boot_num_reviews <- airbnb_na %>% select(number_of_reviews, na_indicator)
+boot_instant <- airbnb_na %>% select(instant_bookable, na_indicator)
+boot_calculated <- airbnb_na %>% select(calculated_host_listings_count, na_indicator)
+boot_accommodates <- airbnb_na %>% select(accommodates, na_indicator)
+boot_bedrooms <- airbnb_na %>% select(bedrooms, na_indicator)
+boot_min <- airbnb_na %>% select(minimum_nights, na_indicator)
+boot_max <- airbnb_na %>% select(maximum_nights, na_indicator)
+boot_rate <- airbnb_na %>% select(host_acceptance_rate, na_indicator)
+boot_rating <- airbnb_na %>% select(review_scores_rating, na_indicator)
+boot_super <- airbnb_na %>% select(host_is_superhost, na_indicator)
+
+## Even though these variables are categorical, we can still compare them by taking
+## the difference in means because the mean is just a proportion for binary vars
+boot_instant <- boot_instant %>% mutate(instant_bookable = 
+                                          as.numeric(as.logical(instant_bookable)))
+boot_super <- boot_super %>% mutate(host_is_superhost =
+                                      as.numeric(as.logical(host_is_superhost)))
+```
+
+```{r}
+# Run bootstrap comparisons for each prepared dataframe
+boot_results_num_reviews <- boot(data = boot_num_reviews, 
+                                 statistic = mean_diff, 
+                                 R = 10000, 
+                                 strata = boot_num_reviews$na_indicator)
+boot_results_instant <- boot(data = boot_instant,
+                             statistic = mean_diff, 
+                             R = 10000, 
+                             strata = boot_instant$na_indicator)
+boot_results_calculated <- boot(data = boot_calculated,
+                                statistic = mean_diff, 
+                                R = 10000, 
+                                strata = boot_calculated$na_indicator)
+boot_results_accommodates <- boot(data = boot_accommodates,
+                                  statistic = mean_diff, 
+                                  R = 10000, 
+                                  strata = boot_accommodates$na_indicator)
+boot_results_bedrooms <- boot(data = boot_bedrooms,
+                              statistic = mean_diff, 
+                              R = 10000, 
+                              strata = boot_bedrooms$na_indicator)
+boot_results_min <- boot(data = boot_min,
+                         statistic = mean_diff, 
+                         R = 10000, 
+                         strata = boot_min$na_indicator)
+boot_results_max <- boot(data = boot_max,
+                         statistic = mean_diff, 
+                         R = 10000, 
+                         strata = boot_max$na_indicator)
+boot_results_rate <- boot(data = boot_rate,
+                          statistic = mean_diff, 
+                          R = 10000, 
+                          strata = boot_rate$na_indicator)
+boot_results_rating <- boot(data = boot_rating,
+                            statistic = mean_diff, 
+                            R = 10000, 
+                            strata = boot_rating$na_indicator)
+boot_results_super <- boot(data = boot_super,
+                           statistic = mean_diff,
+                           R = 10000, 
+                           strata = boot_super$na_indicator)
+```
+
+```{r}
+# Plot bootstrap results
+## This will inform how we construct 95% confidence intervals for mean diffs
+plot(boot_results_num_reviews)
+plot(boot_results_instant)
+plot(boot_results_calculated)
+plot(boot_results_accommodates)
+plot(boot_results_bedrooms)
+plot(boot_results_min) # Not normal, is skewed right
+plot(boot_results_max)
+plot(boot_results_rate)
+plot(boot_results_rating) # Not normal, is skewed left
+plot(boot_results_super)
+## Overall, bootstrap distributions seem to be normal, except for minimum
+## nights and host rating
+
+# Make 95% confidence intervals
+## We use "norm" when the distribution is normal, and "perc" (for percentile)
+## when it is not
+boot.ci(boot_results_num_reviews, type = "norm") # Does not include 0
+boot.ci(boot_results_instant, type = "norm") # Does not include 0
+boot.ci(boot_results_calculated, type = "norm") # Includes 0
+boot.ci(boot_results_accommodates, type = "norm") # Includes 0
+boot.ci(boot_results_bedrooms, type = "norm") # Includes 0
+boot.ci(boot_results_min, type = "perc") # Includes 0
+boot.ci(boot_results_max, type = "norm") # Includes 0
+boot.ci(boot_results_rate, type = "norm") # Includes 0
+boot.ci(boot_results_rating, type = "perc") # Does not include 0
+boot.ci(boot_results_super, type = "norm") # Does not include 0
+## When an interval for some characteristic includes 0, we can essentially say 
+## that the difference in that listing characteristic when price is missing vs.
+## not missing is not significant. But if it does not include 0, then the 
+## difference is significant. So, our results indicate that the difference in
+## the number of reviews, instant bookability, host rating, and superhost status
+## is significant for listings that don't vs. do have price, while it is not
+## significant for the other predictors.
+```
+
+First, an indicator variable that takes the value $1$ if price is missing, and $0$ otherwise was created. Binary variables were given similar indicator variables. Room type was excluded for being a categorical variable. After these indicators were created, the difference in means for a given variable was calculated, conditional on the presence of price. This calculation is repeated across a large number of bootstrap samples. This gave a bootstrap distribution of a difference in means for each variable considered between listings with missing prices and included prices. Once the distributions are obtained, $95\%$ confidence intervals for this statistic are constructed. If the interval includes $0$, the difference is not significant. Otherwise, it is. The bootstrap statistic distributions were normal except for the minimum number of nights and host rating. As such, the intervals for these variables were built using a percentile method, in which the lower bound is the $2.5$th percentile and the upper bound is the $97.5$th percentile.
